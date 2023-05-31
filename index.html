@@ -16,7 +16,11 @@
 <body>
 
   <main class="card container">
-    <div class="card__image"></div>
+    <picture>
+      <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg">
+      <source media="(min-width: 0)" srcset="./images/image-product-mobile.jpg">
+      <img class="card__image" src="./images/image-product-desktop.jpg" alt="">
+    </picture>
 
     <div class="card__content">
       <p class="card__category">Perfume</p>

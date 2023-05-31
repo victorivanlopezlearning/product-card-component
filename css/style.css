@@ -14,7 +14,7 @@
     --bold:         700;
 
     /* WIDTHS */
-    --width: 70rem;
+    --width: 65rem;
 }
 html {
     box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
     font-size: 1.4rem;
     background-color: var(--cream);
     line-height: 1;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -50,7 +50,7 @@ a {
     text-decoration: none;
 }
 .container {
-    width: min(95%, var(--width));
+    width: min(90%, var(--width));
     margin: 0 auto;
 }
 /* CARD */
@@ -66,26 +66,9 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-.card__image {
-    background-image: url(../images/image-product-mobile.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 25rem;
-}
-@media (min-width: 768px) {
-    .card__image {
-        background-image: url(../images/image-product-desktop.jpg);
-    }
-}
 .card__content {
     padding: 3rem;
     background-color: var(--white);
-}
-@media (min-width: 768px) {
-    .card__content {
-        padding: 4rem;
-    }
 }
 .card__category {
     text-transform: uppercase;
@@ -122,7 +105,8 @@ a {
 }
 @media (min-width: 768px) {
     .card__price {
-        font-size: 3.6rem;
+        font-size: 3.4rem;
+        margin: 2rem 0;
     }
 }
 .card__price--discount {
@@ -162,12 +146,10 @@ a {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
 }
 @media (min-width: 768px) {
     .attribution {
-        font-size: 1.5rem;
-        margin-top: 0;
+        font-size: 1.2rem;
         position: absolute;
         bottom: 0;
     }
